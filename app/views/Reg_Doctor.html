@@ -1,0 +1,168 @@
+<div ng-controller="Reg_DoctorController">
+  <section id="blog-archive">
+    <title>Planes Médicos</title>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="blog-archive-area">
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <div class="blog-archive-left">
+                <!-- Start blog news single -->
+                <article class="blog-news-single">
+                  <div class="blog-news-img">
+                    <img src="../assets/Img/pm.jpg" alt="image">
+                  </div>
+                  <div class = "conmargin"></div>
+                  <blockquote>
+                    <span class = "bigger">Nuestros Planes Médicos </span>
+                    <br>
+                    <a ng-click = "scrollTo('family')"><span class = "black cursor:pointer">Plan Familiar</span></a>
+                    <br>
+                    <a ng-click = "scrollTo('empresarial')" ><span class = "black cursor:pointer">Plan Empresarial</span></a>
+                    <br>
+                    <a ng-click = "scrollTo('viejo')" ><span class = "black cursor:pointer">Plan Vital (Tercera Edad)</span></a>
+                    <br>
+                    <a ng-click = "scrollTo('infa')" ><span class = "black cursor:pointer">Plan Infantil</span></a>
+                    <br>
+                    <a ng-click = "scrollTo('sos')" ><span class = "black cursor:pointer">Plan SOS Universitario</span></a>
+                  </blockquote>
+                  <div class="blog-news-title" id = "family">
+                    <h1 >Plan Familiar</h1>
+                    <h2>Costo L.8,160.00 / Cuota L.680</h2>
+                    <!--<p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span></p>-->
+                  </div>
+                  <div class="blog-news-details blog-single-details">
+                  <!--<div class = "olmod">-->
+                    <p>Servicios que Ofrece:</p>
+                    <br>
+                    <ol>
+                      <li>Diagnostico con cámara intraoral</li>
+                      <li>Educación e higiene oral</li>
+                      <li>Aplicación de flúor</li>
+                      <li>Selladores de fosas y fisuras</li>
+                      <li>Profilaxis con ultrasonido</li>
+                      <li>Exodoncias Indicadas</li>
+                      <li>Endodoncias en dientes Uniradiculares</li>
+                      <li>Curetaje cerrado por cuadrante</li>
+                      <li>Restauraciones estéticas</li>
+                      <li>Radiografías periapicales</li>
+                      <li>Emergencías (sin límite)</li>
+                      <li>Consulta telefónica (sin límite)</li>
+                    </ol>
+                  <!--</div>-->
+                      <!--<div class = "fotohermosa">
+                        <img  id = "familyimage" src = "assets/Img/family.jpg"/>
+                      </div>-->
+                      <p>Afiliado tendrá derecho a 12 eventos por año en el que se incluye el diagnostico
+                        de los miembros de su familia.</p>
+                  </div>
+
+                  <div class="blog-news-title">
+                    <h1 id = "empresarial">Plan Empresarial</h1>
+                    <h2>Costo L.2,400.00 / Cuota L.200</h2>
+                    <!--<p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span></p>-->
+                  </div>
+                  <div class="blog-news-details blog-single-details">
+                    <p>Servicios que Ofrece:</p>
+                    <br>
+                    <ol>
+                      <li>Consultas</li>
+                      <li>Diagnostico con cámara intraoral</li>
+                      <li>Educación en higiene oral</li>
+                      <li>Profilaxis con ultrasonido</li>
+                      <li>Endodoncias en dientes Uniradiculares</li>
+                      <li>Curetaje cerrado por cuadrante</li>
+                      <li>Exodoncia</li>
+                      <li>Restauraciones estéticas</li>
+                      <li>Radiografías</li>
+                      <li>Emergencías (sin límite)</li>
+                      <li>Consulta telefónica (sin límite)</li>
+                    </ol>
+                    <p>El afiliado tendrá derecho a 4 eventos por año en los que se incluye
+                      el diágnostico. En este plan los eventos no se agotan.</p>
+                  </div>
+
+                  <div class="blog-news-title">
+                    <h1 id = "viejo">Plan Vital (Tercera Edad)</h1>
+                    <h2>Costo L.3,600.00 / Cuota L.300</h2>
+                    <!--<p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span></p>-->
+                  </div>
+                  <div class="blog-news-details blog-single-details">
+                    <p>Servicios que Ofrece:</p>
+                    <br>
+                    <ol>
+                      <li>Diagnostico con cámara intraoral</li>
+                      <li>Educación en higiene oral</li>
+                      <li>Endodoncias en dientes Uniradiculares</li>
+                      <li>Curetaje cerrado por cuadrante</li>
+                      <li>Profilaxis con ultrasonido</li>
+                      <li>Exodoncias Indicadas</li>
+                      <li>Restauraciones estéticas</li>
+                      <li>Radiografías Periapicales</li>
+                      <li>Emergencías</li>
+                      <li>Consulta telefónica (sin límite)</li>
+                    </ol>
+                    <p>El afiliado tendrá derecho a 6 eventos por año en los que se incluye
+                      el diágnostico y cualquier especialidad odontológica con un descuento del 20%.</p>
+                  </div>
+                  <div class="blog-news-title">
+                    <h1 id = "infa">Plan Infantil</h1>
+                    <h2>Costo L.2,400.00 / Cuota L.200</h2>
+                    <!--<p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span></p>-->
+                  </div>
+                  <div class="blog-news-details blog-single-details">
+                    <p>Servicios que Ofrece:</p>
+                    <br>
+                    <ol>
+                      <li>Diagnostico con cámara intraoral</li>
+                      <li>Educación en higiene oral</li>
+                      <li>Profilaxis con ultrasonido</li>
+                      <li>Endodoncia pediátrica</li>
+                      <li>Curetaje cerrado por cuadrante</li>
+                      <li>Selladores de Fosetas y Fisuras</li>
+                      <li>Exodoncía</li>
+                      <li>Radiografías</li>
+                      <li>Emergencías (sin límite)</li>
+                      <li>Consulta telefónica</li>
+                    </ol>
+                    <p>El afiliado tendrá derecho a 6 eventos por año en los que se incluye
+                      el diágnostico.</p>
+                  </div>
+                  <div class="blog-news-title" id = "sos">
+                    <h1 >Plan SOS Universitario</h1>
+                    <h2>Costo L.2,400.00 / Cuota L.200</h2>
+                    <!--<p>By <a class="blog-author" href="#">John Powell</a> <span class="blog-date">|18 October 2015</span></p>-->
+                  </div>
+                  <div class="blog-news-details blog-single-details">
+                    <p>Servicios que Ofrece:</p>
+                    <br>
+                    <ol>
+                      <li>Diagnostico con cámara intraoral</li>
+                      <li>Educación en higiene oral</li>
+                      <li>Profilaxis con ultrasonido</li>
+                      <li>Endodoncia en dientes uniradiculares</li>
+                      <li>Curetaje cerrado por cuadrante</li>
+                      <li>Exodoncía</li>
+                      <li>Restauraciones estéticas</li>
+                      <li>Radiografías</li>
+                      <li>Emergencías (sin límite)</li>
+                      <li>Consulta telefónica</li>
+                    </ol>
+                    <p>El afiliado tendrá derecho a 6 eventos por año en los que se incluye
+                      el diágnostico.</p>
+                  </div>
+
+                </article>
+
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>

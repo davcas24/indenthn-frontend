@@ -1,0 +1,45 @@
+<div ng-controller="adminpageController">
+  <title> Administrador </title>
+  <table class="table table-striped" id="admintable">
+        <tr>
+          <th>
+            Correo
+          </th>
+          <th>
+            Nombre
+          </th>
+          <th>
+            Apellido
+          </th>
+          <th>
+            Identidad
+          </th>
+          <th>
+            Telefono
+          </th>
+          <th>
+          </th>
+        </tr>
+        <tr ng-repeat="user in PartDoctors" ng-model = "PartDoctors">
+          <td>
+            {{user.correo}}
+          </td>
+          <td>
+            {{user.nombre}}
+          </td>
+          <td>
+            {{user.apellido}}
+          </td>
+          <td>
+            {{user.identidad}}
+          </td>
+          <td>
+            {{user.telefono}}
+          </td>
+          <td align="center">
+            <button type="button" class="btn btn-primary" ng-click = "authorize(user)">Autorizar</button>
+          </td>
+        </tr>
+      </table>
+
+</div>

@@ -1,0 +1,70 @@
+<div>
+  <div id="Profile_Name">
+    <span id="Account_Name">"Nombre de la persona"</span>
+  </div>
+  <div id="Profile_Pacient">
+    <div class="col-md-4">
+      <div id = "Profile_left">
+        <!--Profile Image-->
+        <div id="Profile_Image">
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div id="Profile_Right">
+      <br>
+        <h1 id="Titles">Expediente</h1>
+        <table class="table table-striped" id="doctable">
+              <tr>
+                <th>
+                  Doctor
+                </th>
+                <th>
+                  Observaciones
+                </th>
+                <th>
+                  Fecha
+                </th>
+              </tr>
+              <tr ng-repeat="Object in exp" ng-model = "PartDoctors">
+                <td>
+                  {{Object.doctor}}
+                </td>
+                <td>
+                  {{Object.observacion}}
+                </td>
+                <td>
+                  {{Object.fecha}}
+              </tr>
+            </table>
+            <div id="Tables">
+            <h1 id="Titles">Mensajes</h1>
+            <table class="table table-striped" id="doctable">
+                  <tr>
+                    <th>
+                      From
+                    </th>
+                    <th>
+                      Mensaje
+                    </th>
+                    <th>
+                    </th>
+                  </tr>
+                  <tr ng-repeat="Object in messages" ng-model = "PartDoctors">
+                    <td>
+                      {{Object.From}}
+                    </td>
+                    <td>
+                      {{Object.Mensaje}}
+                    </td>
+                    <td align="center">
+                      <button type="button" class="btn btn-primary" ng-click = "authorize(Object.correo)">Responder</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+      </div>
+    </div>
+  </div>
+</div>

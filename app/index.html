@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- endinject -->
+    <!--<script src = "/bootstrap/js/dropdown.js"></script>-->
+    <link rel="shortcut icon" type="image/icon" href="./assets/Img/small.png"/>
+    <link href="./assets/css/font-awesome.css" rel="stylesheet">
+    <!--<link href="./assets/css/bootstrap.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick.css"/>
+    <link rel="stylesheet" href="./assets/css/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-progressbar-3.3.4.css"/>
+    <link id="switcher" href="./assets/css/theme-color/fountain-blue-theme.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
+    <link href='https:/fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https:/fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bootstrap-css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/sweetalert/dist/sweetalert.css">
+    <!-- endinject -->
+  </head>
+  <body ng-app="AngularScaffold">
+    <div ng-controller="navbarController">
+      <nav class="navbar navbar-default">
+        <div id="preloader">
+          <div id="status">&nbsp;</div>
+        </div>
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+
+    <header id="header">
+<!-- header top search -->
+<div class="header-top">
+  <div class="container">
+    <form action="">
+      <div id="search">
+      <input type="text" placeholder="Type your search keyword here and hit Enter..." name="s" id="m_search" style="display: inline-block;">
+      <button type="submit">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+    </form>
+  </div>
+</div>
+<!-- header bottom -->
+<div class="header-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <div class="header-contact">
+          <ul>
+            <li>
+              <div class="phone">
+                <i class="fa fa-phone"></i>
+                2235-7566
+              </div>
+            </li>
+            <li>
+              <div class="mail">
+                <i class="fa fa-envelope"></i>
+                ieid13@hotmail.com
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-6">
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+<div id="menu-area">
+  <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- LOGO -->
+        <!-- TEXT BASED LOGO -->
+        <span style="cursor:pointer"><a class="navbar-brand" ng-click="goHome()"><img id = "mainlogo" alt = "Logo" src = "./assets/Img/logo.gif"/></a></span>
+        <!-- IMG BASED LOGO  -->
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+          <!--<li><a ng-click = "goadmin()" ng-show = "isAdmin()"><span style="cursor:pointer">Administrador</span></a></li>-->
+          <li><a ng-click = "goHome()" style="cursor:pointer" >Inicio</a></li>
+          <li class="dropdown" >
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acerca de Nostros<span class="fa fa-angle-down"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <div >
+                <a ng-click = "gous()"><span style="cursor:pointer" class="Drop custom_span">Quienes Somos</span></a><br>
+                <a ng-click = "goPM()"><span style="cursor:pointer" class="Drop custom_span">Planes Médicos</span></a><br>
+                <!--<a ng-click = "goReg_pac()"><span style="cursor:pointer" class="Drop custom_span">Especialidades</span></a><br>-->
+              </div>
+            </ul>
+          </li>
+          <li><a ng-click = "goFilter_page()" style="cursor:pointer" >Portafolio</a></li>
+          <li class="dropdown">
+            <a ng-click = "goDocPro()" class="dropdown-toggle"style="cursor:pointer" >Contáctanos</a>
+          </li>
+
+          <!--<li class="dropdown" >
+            <a ng-click = "wheretogo()" class="dropdown-toggle" data-toggle="dropdown" style="cursor:pointer"> <span class="glyphicon glyphicon-user" ></span> {{$sessionStorage.currentUser.nombre}} {{$sessionStorage.currentUser.apellido}} <span class="fa fa-angle-down"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <a ng-click = "goEdit()" > <span class="fa fa-cog" id="EditG"></span><span style="cursor:pointer" class="Drop"> Editar Perfil </span></a> <br>
+                <a ng-click = "logout()"> <span class="fa fa-user-times" id="LogG"></span><span style="cursor:pointer" class="Drop"> Cerrar Sesión </span></a>
+            </ul>
+          </li>-->
+        </ul>
+      </div>
+    <!--</div>-->
+  </nav>
+</div>
+
+    <div class="container">
+      <div ui-view></div>
+  </div>
+
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="footer-left">
+              <p><a href="index.html">Instituto de Especialidades e Implantes Dentales</a></p>
+              <br><p> Torre Medica Tepeyac, Colonia Tepeyac, Ave. Juan Lindo, Tegucigalpa, Honduras </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="footer-right">
+              <a href="https://www.facebook.com/IEIDHonduras/"><i class="fa fa-facebook"></i></a>
+            <!--<a href="#"><i class="fa fa-twitter"></i></a>
+              -<a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+
+  <!-- bower:js -->
+
+  <script src="/jquery/dist/jquery.js"></script>
+
+  <script src="/angular/angular.js"></script>
+
+  <script src="/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="/bootstrap-css/js/bootstrap.min.js"></script>
+
+  <script src="/ngstorage/ngStorage.js"></script>
+
+  <script src="/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src="/jQuery/dist/jquery.js"></script>
+
+  <script src="/bootstrap/dist/js/bootstrap.js"></script>
+
+  <!-- endinject -->
+
+  <script src="app.js"></script>
+
+  <!-- inject:js -->
+  <script src="scripts/controllers/adminpageController.js"></script>
+  <script src="scripts/controllers/DoctorProfileController.js"></script>
+  <script src="scripts/controllers/EditDoctorController.js"></script>
+  <script src="scripts/controllers/EditPacienteController.js"></script>
+  <script src="scripts/controllers/FilterController.js"></script>
+  <script src="scripts/controllers/HomeController.js"></script>
+  <script src="scripts/controllers/navbarController.js"></script>
+  <script src="scripts/controllers/PacienteProfileController.js"></script>
+  <script src="scripts/controllers/registerController.js"></script>
+  <script src="scripts/controllers/Reg_DoctorController.js"></script>
+  <script src="scripts/controllers/Reg_PacientController.js"></script>
+  <script src="scripts/services/adminpageService.js"></script>
+  <script src="scripts/services/authService.js"></script>
+  <script src="scripts/services/DoctorProfileService.js"></script>
+  <script src="scripts/services/EditService.js"></script>
+  <script src="scripts/services/FilterService.js"></script>
+  <script src="scripts/services/PacienteProfileService.js"></script>
+  <script src="scripts/services/profileService.js"></script>
+  <script src="scripts/services/SearchProfileService.js"></script>
+  <script src="scripts/services/TablaProfileService.js"></script>
+  <!--endinject -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <!-- mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+ <!-- counter -->
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/jquery.counterup.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="assets/js/wow.js"></script>
+  <!-- progress bar   -->
+  <script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>
+
+
+  <!-- Custom js -->
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+  <script src="jquery.fancybox-plus.js"></script>
+<script src="angular-fancybox-plus.js"></script>
+  <script type="text/javascript" src="./assets/js/slick.js"></script>
+  <script type="text/javascript" src="./assets/js/jquery.mixitup.js"></script>
+  <script type="text/javascript" src="./assets/js/jquery.fancybox.pack.js"></script>
+  <script src="./assets/js/waypoints.js"></script>
+  <script src="./assets/js/jquery.counterup.js"></script>
+  <script type="text/javascript" src="./assets/js/wow.js"></script>
+  <script type="text/javascript" src="./assets/js/bootstrap-progressbar.js"></script>
+  <!--<script type="text/javascript" src="./assets/js/dropdown.js"></script>-->
+  <script type="text/javascript" src="./assets/js/custom.js"></script>
+
+
+</html>

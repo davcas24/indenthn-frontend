@@ -1,0 +1,36 @@
+<div id="edit" ng-controller="EditDoctorController">
+  <h1> Informacion General </h1><br>
+  <div class="form-group">
+    <label for="comment">Imagen de Perfil:</label>
+    <input type="file" class="form-control" placeholder="Imagen de Perfil" name = "ProfilePic"  accept = "image/*" id = "imgup" >
+  </div>
+  <div class="form-group">
+    <div id = "propic"  width = "50px" height="50px"/>
+    <!--src = "../assets/Img/doctorav.png"-->
+  </div>
+  <div class="form-group">
+    <label for="usr">Nombre:</label>
+    <input type="text" class="form-control" id="usr">
+  </div>
+  <div class="form-group">
+    <label for="usr">Apellido:</label>
+    <input type="text" class="form-control" id="usr">
+  </div>
+  <div class="form-group">
+    <label for="usr">Telefono:</label>
+    <input type="text" class="form-control" id="usr">
+  </div>
+  <div class="form-group">
+    <label for="usr">Ciudad:</label>
+    <input type="text" class="form-control" id="usr">
+  </div>
+  <div class="form-group">
+    <label for="comment">Ubicacion:</label>
+    <textarea class="form-control" rows="4" id="comment"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="comment">Horario de Atencion:</label>
+    <textarea class="form-control" rows="4" id="comment"></textarea>
+  </div>
+  <button type="button" class="btn btn-default btn-md" id="Save_Changes">Guardar</button>
+</div>

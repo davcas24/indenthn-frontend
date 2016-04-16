@@ -1,0 +1,86 @@
+<div ng-controller = "DoctorProfileController" class = "daxfamily">
+  <section id="contact">
+    <title>Contacto</title>
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12">
+           <div class="title-area">
+              <h2 class="title">Cont&#225ctanos</h2>
+              <span class="line"></span>
+              <p>Cont&#225ctanos si tienes alguna pregunta o consulta</p>
+            </div>
+         </div>
+         <div class="col-md-12">
+           <div class="cotact-area">
+             <div class="row">
+               <div class="col-md-4">
+                 <div class="contact-area-left">
+                   <span class = "thickdax"><h4>Informaci&#243n</h4></span>
+                   <p>Nos puedes encontrar en torre medica Tepeyac, y proximamente en Hospital SEMESUR Choluteca</p>
+                   <address class="single-address">
+                     <p>Torre Medica Tepeyac, Colonia Tepeyac, Ave. Juan Lindo, Tegucigalpa, Honduras</p>
+                     <p>ieid13@hotmail.com</p>
+                     <p>(504) 2235-7566</p>
+                     <p> Horario : 7am - 7pm </p>
+                   </address>
+                   <div class="footer-right contact-social">
+                      <a href="https://www.facebook.com/IEIDHonduras/"><i class="fa fa-facebook"></i></a>
+                      <!--<a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                      <a href="#"><i class="fa fa-instagram"></i></a>-->
+                    </div>
+                 </div>
+               </div>
+               <div class="col-md-8">
+                 <div class="contact-area-right">
+                   <form  class="comments-form contact-form" name = "form2" enctype = "text/plain">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Nombre" name = "Nombre" ng-model = "mensaje1.nombre" id = "texto">
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Correo" name = "Correo" ng-model = "mensaje1.correo" id = "texto1">
+                    </div>
+                     <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Asunto" name = "Asunto" ng-model = "mensaje1.asunto" id = "texto2">
+                    </div>
+                    <div class="form-group">
+                      <textarea placeholder = "Mensaje" rows="3" class="form-control" name = "Mensaje" ng-model = "mensaje1.mensaje" id = "texto3"></textarea>
+                    </div>
+                    <!--<button class = "comment-btn" >Enviar</button>-->
+                    <button type = "button" class="btn btn-primary" ng-click = "send()" > Enviar </button>
+                  </form>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+  </section>
+  <!-- End contact section  -->
+
+  <!-- Start google map
+  <section >-->
+  <div class="title-area" margin-bottom : "15px">
+    <h4 class="title">Ub&#237canos</h4>
+  </div>
+    <div id="map"  allowfullscreen>
+    <script>
+    function initMap() {
+      var mapDiv = document.getElementById('map');
+      var map = new google.maps.Map(mapDiv, {
+        center: {lat: 14.094667, lng: -87.190755},
+        zoom: 18
+      });
+        console.log("try");
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+    </div>
+  <!--</section>
+  <! End google map -->
+
+
+</div>
